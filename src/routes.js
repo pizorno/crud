@@ -6,7 +6,7 @@ const TeamController = require('./controllers/TeamController');
 const routes = express.Router();
 
 routes.post('/servicos', ServicoController.store);
-routes.post('/post', PostController.store);
-routes.post('/team', TeamController.store);
+routes.post('/posts', PostController.store);
+routes.post('/equipe', TeamController.store);
 
 module.exports = routes;
