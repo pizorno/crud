@@ -1,9 +1,8 @@
 const express = require('express');
+const ServicoController = require('./controllers/ServicoController');
 
 const routes = express.Router();
 
-routes.get('/', (req, res) => {
-  return res.json({ hello: 'world' });
-})
+routes.post('/servicos', ServicoController.store);
 
 module.exports = routes;
